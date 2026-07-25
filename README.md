@@ -1,6 +1,6 @@
-<img width="1517" height="796" alt="birdimage" src="https://github.com/user-attachments/assets/262077f6-161d-4ffb-a5d4-c54de1625781" />
-<img width="1223" height="1600" alt="WhatsApp Image 2026-07-25 at 11 07 13" src="https://github.com/user-attachments/assets/a2b195a3-e37b-4679-9663-511a40643db4" />
-<img width="1204" height="1600" alt="WhatsApp Image 2026-07-25 at 11 07 12" src="https://github.com/user-attachments/assets/06782ec6-87e5-4135-9b1f-0cda92cade0f" />
+<img width="1200" height="700" alt="birdimage" src="https://github.com/user-attachments/assets/262077f6-161d-4ffb-a5d4-c54de1625781" />
+<img width="1200" height="700" alt="WhatsApp Image 2026-07-25 at 11 07 13" src="https://github.com/user-attachments/assets/a2b195a3-e37b-4679-9663-511a40643db4" />
+<img width="1204" height="800" alt="WhatsApp Image 2026-07-25 at 11 07 12" src="https://github.com/user-attachments/assets/06782ec6-87e5-4135-9b1f-0cda92cade0f" />
 
 #  AI-Powered Bird 
 Detection & Automatic Water Sprinkler Prototype
