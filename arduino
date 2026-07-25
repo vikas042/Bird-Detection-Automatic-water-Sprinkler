@@ -1,0 +1,76 @@
+#include <Servo.h>
+
+Servo gunServo;
+
+const int servoPin = 9;
+const int IN1 = 7;
+const int IN2 = 8;
+
+void setup() {
+
+  Serial.begin(9600);
+
+  gunServo.attach(servoPin);
+
+  pinMode(IN1, OUTPUT);
+  pinMode(IN2, OUTPUT);
+
+  // Pump OFF
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, LOW);
+
+  // Servo Center
+  gunServo.write(90);
+
+  Serial.println("System Ready");
+}
+
+void loop() {
+
+  if (Serial.available()) {
+
+    char data = Serial.read();
+
+    // ==========================
+    // Bird Detected
+    // ==========================
+    if (data == 'B') {
+
+      Serial.println("Bird Detected");
+
+      // Servo Move
+      gunServo.write(150);
+      delay(500);
+
+      // Pump ON
+      digitalWrite(IN1, HIGH);
+      digitalWrite(IN2, LOW);
+
+      delay(1000);
+
+      // Pump OFF
+      digitalWrite(IN1, LOW);
+      digitalWrite(IN2, LOW);
+
+      delay(500);
+
+      // Servo Back
+      gunServo.write(90);
+    }
+
+    // ==========================
+    // Human Detected
+    // ==========================
+    else if (data == 'H') {
+
+      Serial.println("Human Detected");
+
+      // Safety
+      digitalWrite(IN1, LOW);
+      digitalWrite(IN2, LOW);
+
+      gunServo.write(90);
+    }
+  }
+}
+S
