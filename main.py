@@ -7,7 +7,7 @@ import time
 # ==========================
 # Arduino Serial Port
 # ==========================
-arduino = serial.Serial('COM11', 9600)   # Change COM if needed
+arduino = serial.Serial('COM11', 9600)   # Change COM3 if needed
 time.sleep(2)
 
 # ==========================
